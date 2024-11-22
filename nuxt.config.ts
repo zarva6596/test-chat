@@ -6,7 +6,10 @@ export default defineNuxtConfig({
 
   components: {
     global: true,
-    dirs: ['~/components/general']
+    dirs: [
+      '~/components/general',
+      '~/components/universal'
+    ]
   },
   modules: ['@nuxtjs/tailwindcss'],
 })
