@@ -3,13 +3,15 @@
 </script>
 
 <template>
-    <div class="h-screen flex flex-col justify-between max-w-max mx-auto">
-        <AppHeader />
+    <div class="bg-blue-100/50 pt-40 h-screen">
+        <div class="h-full flex flex-col justify-between max-w-max mx-auto bg-white">
+            <AppHeader />
 
-        <main class="flex-auto">
-            <slot />
-        </main>
+            <main class="flex-auto">
+                <slot />
+            </main>
 
-        <AppFooter />
+            <AppFooter />
+        </div>
     </div>
 </template>
