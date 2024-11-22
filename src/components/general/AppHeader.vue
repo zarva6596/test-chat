@@ -17,7 +17,15 @@ import UsersIconsRow from '../user/UsersIconsRow.vue';
         </div>
 
         <Dropdown>
-            <template #toggle>...</template>
+            <template #toggle>
+                <div class="group flex items-center gap-0.5 h-4">
+                    <div
+                        v-for="i in 3"
+                        :key="i"
+                        class="rounded-full h-1 w-1 bg-gray-400 group-hover:bg-gray-500 transition-all duration-500"
+                    />
+                </div>
+            </template>
 
             <template #menu>
                 <div class="flex flex-col items-center">
