@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import AppHeader from '../components/general/AppHeader.vue';
+
 </script>
 
 <template>
-    <div>
+    <div class="h-screen flex flex-col justify-between max-w-max mx-auto">
         <AppHeader />
 
-        <main>
+        <main class="flex-auto">
             <slot />
         </main>
 
