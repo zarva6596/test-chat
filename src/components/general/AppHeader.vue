@@ -1,8 +1,11 @@
+<script setup lang="ts">
+import UserIcon from '../user/UserIcon.vue';
+import UsersIconsRow from '../user/UsersIconsRow.vue';
+</script>
+
 <template>
     <header class="flex items-center justify-between py-4 px-3 shadow-header">
-        <div class="flex items-center">
-            <div v-for="i in 4" :key="i">{{ i }}</div>
-        </div>
+        <UsersIconsRow />
 
         <div class="flex flex-col items-center">
             <div class="text-lg text-dark-500">
