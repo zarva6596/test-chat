@@ -51,7 +51,7 @@ const itIsAuth = computed(() => user.value?.login === authLogin)
                     <div class="absolute right-1.5 top-1.5 rounded-t-full bg-white h-3 w-4" />
                 </div>
 
-                <div class="mr-16 flex flex-col">
+                <div class="mr-16 flex flex-col max-w-60">
                     <span
                         v-if="!itIsAuth"
                         class="capitalize text-sm font-semibold"

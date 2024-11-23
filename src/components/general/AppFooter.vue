@@ -1,9 +1,34 @@
 <script setup lang="ts">
+import { useChatStore } from '~/store/useChatStore';
+
+const { authLogin } = useChatStore()
+const { messages } = storeToRefs(useChatStore())
+
 const message = ref('')
 
 const addMailMark = () => message.value = `${message.value}@`
 
 const sendMessage = () => {
+    const date = new Date()
+
+    let hours = date.getHours()
+    const minutes = date.getMinutes()
+    const ampm = hours >= 12 ? 'PM' : 'AM'
+
+    hours = hours % 12
+    hours = hours ? hours : 12
+
+    const year = date.getFullYear()
+    const month = date.getMonth() + 1
+    const day = date.getDate()
+
+    messages.value.push({
+        message: message.value,
+        authLogin,
+        date: `${day}/${month}/${year}`,
+        time: `${hours}:${minutes} ${ampm}`
+    })
+
     message.value = ''
 }
 
