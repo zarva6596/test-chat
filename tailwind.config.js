@@ -11,6 +11,7 @@ export default {
           500: '#2C2C2E'
         },
         gray: {
+          light: '#F2F2F7',
           500: '#666668'
         }
       },
