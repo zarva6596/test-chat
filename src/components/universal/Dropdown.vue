@@ -20,11 +20,11 @@ onClickOutside(el, close)
         </div>
 
         <div
-            class="z-10 w-max absolute top-full right-0 bg-white transition-all duration-500"
+            class="z-10 w-max absolute top-full right-0 transition-all duration-500"
             :class="showMenu ? 'opacity-100 visible' : 'opacity-0 invisible'"
         >
             <div
-                class="border border-gray-100 shadow-sm rounded-lg" 
+                class="border border-gray-100 shadow-sm rounded-lg overflow-hidden bg-white" 
                 @click="close"
             >
                 <slot name="menu" />
