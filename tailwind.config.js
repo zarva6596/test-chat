@@ -6,6 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: '#007AFF',
         dark: {
           500: '#2C2C2E'
         },
@@ -17,7 +18,8 @@ export default {
         max: '41rem'
       },
       boxShadow: {
-        header: '0 1px 0 0 #E5E5EA'
+        header: '0 1px 0 0 #E5E5EA',
+        footer: '0 -1px 0 0 #E5E5EA',
       }
     },
   },

@@ -11,5 +11,5 @@ export default defineNuxtConfig({
       '~/components/universal'
     ]
   },
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/icon'],
 })
