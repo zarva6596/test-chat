@@ -1,25 +1,8 @@
 <script setup>
 import UserIcon from '@/components/user/UserIcon.vue'
+import { useChatStore } from '@/store/useChatStore'
 
-const users = [
-    {
-        firstName: 'Roman',
-        lastName: 'Zarva',
-    },
-    {
-        firstName: 'Mukola',
-        lastName: 'Getman'
-
-    },
-    {
-        firstName: 'Mukhailo',
-        lastName: 'Koval'
-    },
-    {
-        firstName: 'Denus',
-        lastName: 'Pustolit'
-    },
-]
+const { users } = useChatStore()
 </script>
 
 <template>
